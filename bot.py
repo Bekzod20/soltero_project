@@ -54,10 +54,11 @@ def echo(update, context):
         clinics = "1. NEW LIFE MEDICAL  \n2. Akfa Medline"
 
         update.message.reply_text(clinics)
+    
 
     if update.message.text == '2':
-        update.message.reply_text('Doktorni tanlang 👩🏻‍⚕️: ')
-        doctors = "1. Хирург  \n2. Психиатр \n3. Кардиолог \n4. Педиатр \n5. Эндокринолог "
+        update.message.reply_text('Doktorni tanlang 👨‍⚕👩‍⚕: ')
+        doctors = "1. Хирург  \n2. Психиатр \n3. Кардиолог \n4. Педиатр \n5. Эндокринолог \n6. Аллерголог \n7. Анестезиолог \n8. Аритмолог \n9. Гастроэнтеролог \n10. гематолог \n11. Гепатолог \n12. Терапевт"
         update.message.reply_text(doctors)
 
     if update.message.text == '3':
@@ -88,7 +89,7 @@ def echo(update, context):
 
     if update.message.text == '6':
         update.message.reply_text('Siz doktor qabuliga yozildingiz! ✅')
-        msg = '📆  Hafta kuni: Payshanbi \n⏰  Vaqt: 13:00-14:20 \n👩🏻‍⚕️ Doktor: Аминов Санжар Абдуазимович (Врач-кардиолог) '
+        msg = '📆  Hafta kuni: Payshanbi \n⏰  Vaqt: 13:00-13:20 \n👨‍⚕ Doktor: Аминов Санжар Абдуазимович (Врач-кардиолог) '
         update.message.reply_text(msg)
 
 
@@ -102,7 +103,7 @@ def main():
     # Create the Updater and pass it your bot's token.
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
-    updater = Updater("5072938773:AAEGc3maEpP63EbkT4KIKQ9RQnx1WbG1x5U", use_context=True)
+    updater = Updater("your_token", use_context=True)
 
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
